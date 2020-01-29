@@ -1,12 +1,13 @@
 # eut-matlab-collection
 Sammlung von Matlab-Scripts für den EUT-Studiengang
 
-#Übersicht
+# Übersicht
+
 ## an3U
 Beinhalted Skripts für das Modul an3U.
 Erstellt von Dino Haldimann.
 
-##glaL
+## glaL
 Beinhalted z.Zt. ein Skript zur Berechnung der Fehlerfortpflanzung bei Messungen.
 
 
