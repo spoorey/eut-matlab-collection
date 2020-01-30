@@ -4,7 +4,7 @@ Sammlung von Matlab-Scripts für den EUT-Studiengang
 # Übersicht
 
 ## an3U
-Beinhalted Skripts für das Modul an3U.
+Beinhaltet Skripts für das Modul an3U.
 Erstellt von Dino Haldimann.
 
 ## glaL
