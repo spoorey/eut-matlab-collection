@@ -4,7 +4,7 @@ clear all
 syms x n
 assume(n,'integer')
 
-f(x)=piecewise(-pi&lt;=x&lt;=pi,cos(x/2))
+f(x)=piecewise(-pi<=x<=pi,cos(x/2))
 
 fplot(f(x))
 

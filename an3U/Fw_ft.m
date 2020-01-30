@@ -7,7 +7,7 @@ assume (w,'real')
 %assume(w,'positive')
 F(w)=w*exp(-abs(w))
 
-%F(w)=piecewise(-pi&lt;w&lt;pi,1/4*(pi^2-w^2))
+%F(w)=piecewise(-pi<w<pi,1/4*(pi^2-w^2))
 
 f(t)=simplify(1/(2*pi)*int(F(w)*exp(j*w*t),w,-inf,inf),100)
 

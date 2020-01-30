@@ -27,12 +27,12 @@ z=double(f(x0,y0));
 
 k=fxx(x0,y0)*fyy(x0,y0)-fxy(x0,y0)^2;
 
-if fx(x0,y0)==0 &amp;&amp; fy(x0,y0)==0
-if fxx(x0,y0)&lt;0 &amp;&amp; fyy(x0,y0)&lt;0 &amp;&amp; k&gt;0
+if fx(x0,y0)==0 && fy(x0,y0)==0
+if fxx(x0,y0)<0 && fyy(x0,y0)<0 && k>0
 disp("Maximum im Punkt ("+x0+","+y0+","+z+")")
-elseif fxx(x0,y0)&gt;0 &amp;&amp; fyy(x0,y0)&gt;0 &amp;&amp; k&gt;0
+elseif fxx(x0,y0)>0 && fyy(x0,y0)>0 && k>0
 disp("Minimum im Punkt ("+x0+","+y0+","+z+")")
-elseif k&lt;0
+elseif k<0
 disp("Sattelpunkt im Punkt ("+x0+","+y0+","+z+")")
 end
 end
