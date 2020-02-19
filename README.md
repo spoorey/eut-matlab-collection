@@ -17,7 +17,7 @@ Im Ordner Python sind analog zu den im Unterricht vorgestellten matlab-skripts e
 ## Python Skripts
 Falls Anaconda zur Ausführung der Python Skripts verwendet werden soll, ist ein Konfigurationsfile für ein Anaconda Environment hinterlegt. Dieses kann wie folgt aktiviert werden:
 
-`conda env create -f conda-environment.yaml`
+`conda env create -f conda-environment.yml`
 
 `conda activate eut`
 
