@@ -1,4 +1,4 @@
-name: wst
+name: eut
 channels:
   - anaconda
   - conda-forge
@@ -24,11 +24,13 @@ dependencies:
   - numpy=1.18.1=py38h93ca92e_0
   - numpy-base=1.18.1=py38hc3f5095_1
   - openssl=1.1.1=he774522_0
+  - pandas=1.0.1=py38h47e9c7a_0
   - pip=20.0.2=py38_1
   - pyparsing=2.4.6=py_0
   - pyqt=5.9.2=py38ha925a31_4
   - python=3.8.1=h5fd99cc_1
   - python-dateutil=2.8.1=py_0
+  - pytz=2019.3=py_0
   - qt=5.9.7=vc14h73c81de_0
   - setuptools=45.2.0=py38_0
   - sip=4.19.13=py38ha925a31_0
@@ -40,4 +42,5 @@ dependencies:
   - wheel=0.34.2=py38_0
   - wincertstore=0.2=py38_0
   - zlib=1.2.11=vc14h1cdd9ab_1
+prefix: C:\Users\david\Anaconda3\envs\eut
 
