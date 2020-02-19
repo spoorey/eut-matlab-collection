@@ -1,6 +1,6 @@
-% Gauss-Fehlerfortpflanzung für eine beliebige Formel, bestehend aus
+% Gauss-Fehlerfortpflanzung fÃ¼r eine beliebige Formel, bestehend aus
 % Messwerten
-% Autor: David Spörri
+% Autor: David SpÃ¶rri
 formel = input('Gib deine Formel ein:\n', 's');
 formel = str2sym(formel);
 
