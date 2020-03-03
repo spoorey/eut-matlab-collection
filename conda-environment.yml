@@ -32,6 +32,7 @@ dependencies:
   - python-dateutil=2.8.1=py_0
   - pytz=2019.3=py_0
   - qt=5.9.7=vc14h73c81de_0
+  - scipy=1.4.1=py38h9439919_0
   - setuptools=45.2.0=py38_0
   - sip=4.19.13=py38ha925a31_0
   - six=1.14.0=py38_0
