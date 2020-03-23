@@ -51,17 +51,3 @@ while (classStart<max(data)):
 
 plt.hist(data, classBorders)  # vordefinierte Klassengrenzen
 plt.show()
-
-'''
-d = decimal.Decimal('400')
-print(d.as_integer_ratio())
-print(d.as_tuple().exponent)
-
-d = decimal.Decimal('420')
-print(d.as_integer_ratio())
-print()
-
-d = decimal.Decimal('400.33')
-print(d.as_integer_ratio())
-print(d.as_tuple().exponent)
-'''
