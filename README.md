@@ -8,11 +8,14 @@ Beinhaltet Skripts für das Modul an3U.
 Erstellt von Dino Haldimann.
 
 ## glaL
-Beinhalted z.Zt. ein Skript zur Berechnung der Fehlerfortpflanzung bei Messungen, und eine Python-Visualisierung des Ladeverlaufs beim Batterieversuch.
+Beinhalted ein Skript zur Berechnung der Fehlerfortpflanzung bei Messungen, und eine Python-Visualisierung des Ladeverlaufs beim Batterieversuch.
+
+## thma
+Enthält eine Python-Lösung zur organic rankine cycle Aufgabe.
 
 ## wst
 Beinhaltet Skripts zum Modul wst.
-Im Ordner Python sind analog zu den im Unterricht vorgestellten matlab-skripts entsprechende "Übersetzungen" zu Python zu finden.
+Im Ordner Python sind analog zu den im Unterricht vorgestellten matlab-skripts entsprechende "Übersetzungen" zu Python zu finden. Da Coronabedingt nur wenig im Unterricht gezeigt wurde, ist das nicht besonders viel.
 
 ## Python Skripts
 Falls Anaconda zur Ausführung der Python Skripts verwendet werden soll, ist ein Konfigurationsfile für ein Anaconda Environment hinterlegt. Dieses kann wie folgt aktiviert werden:
