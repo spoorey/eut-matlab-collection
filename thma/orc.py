@@ -10,14 +10,22 @@ eta_turbine = 0.85
 eta_regenerator = 0.75
 q_turbine_entry = 1
 
-states = [dict()] * 7
-for key, value in enumerate(states):
-    states[key] = dict()
 
-states[4]['T'] = tv
-states[4]['Q'] = q_turbine_entry
-states[1]['T'] = tk
-states[1]['Q'] = 0
+state1 = dict()
+state2 = dict()
+state3 = dict()
+state4 = dict()
+state5 = dict()
+state6 = dict()
+state5s = dict()
+
+
+state4['T'] = tv
+state4['Q'] = q_turbine_entry
+
+state1['T'] = tk
+state1['Q'] = 0
+
 
 '''
 print('superheated:')
@@ -29,30 +37,30 @@ complete_state(subcooled, fluid)
 '''
 
 
-complete_state(states[4], fluid)
-complete_state(states[1], fluid)
+complete_state(state4, fluid)
+complete_state(state1, fluid)
 
-states[2]['S'] = states[1]['S']
-states[5]['P'] = states[1]['P']
-states[6]['P'] = states[1]['P']
+state2['S'] = state1['S']
+state5['P'] = state1['P']
+state6['P'] = state1['P']
 
-states[3]['P'] = states[4]['P']
-states[2]['P'] = states[4]['P']
+state3['P'] = state4['P']
+state2['P'] = state4['P']
 
 
 
-complete_state(states[2], fluid)
+complete_state(state2, fluid)
 
 print('state1:')
-print(states[1])
+print(state1)
 print('state2:')
-print(states[2])
+print(state2)
 print('state4:')
-print(states[4])
+print(state4)
 
 
 
-#enthalpy_vaporizer = states[4]['H'] - states[3]['H']
+#enthalpy_vaporizer = state4]['H'] - state3]['H']
 #mass_flow = power_vaporizer/enthalpy_vaporizer
 
 #print(mass_flow, 'kg/s')
