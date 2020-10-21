@@ -8,7 +8,7 @@ def get_property(property: str, state: dict, fluid: str):
     message = property + ' = ' + str(value) + ' for "' + fluid + '" at '
     for key in state.keys():
         message += key + '=' + str(state[key]) + '; '
-    print(message)
+    #print(message)
 
     return value
 

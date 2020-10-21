@@ -1,5 +1,4 @@
 from functions import complete_state
-import math
 
 fluid = 'Isopentane'
 
@@ -76,6 +75,15 @@ mass_flow = power_vaporizer/enthalpy_vaporizer
 
 power_generator = (state4['H'] - state5['H']) * mass_flow
 
+print(round(power_generator/1000, 2), ' kW')
+print(round(mass_flow, 2), 'kg/s')
+print('Eta_Machine = ', round(power_generator/power_vaporizer, 3))
+
+# No regenerator
+power_regenerator = delta_h_regenerator * mass_flow
+print('Eta_Machine (regenerator as input) = ', round(power_generator/(power_vaporizer + power_regenerator), 3))
+
+'''
 print('state1:')
 print(state1)
 print('state2:')
@@ -92,7 +100,5 @@ print('state5s:')
 print(state5s)
 print('statePT2:')
 print(statePT2)
+'''
 
-print(round(power_generator/1000, 2), ' kW')
-print(round(mass_flow, 2), 'kg/s')
-print('Eta_Machine = ', round(power_generator/power_vaporizer, 3))
