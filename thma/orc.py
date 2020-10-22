@@ -1,4 +1,4 @@
-from functions import complete_state
+from functions import complete_state, create_ts_plot
 
 fluid = 'Isopentane'
 
@@ -75,6 +75,19 @@ mass_flow = power_vaporizer/enthalpy_vaporizer
 
 power_generator = (state4['H'] - state5['H']) * mass_flow
 
+states = [
+    {'marker': True, 'data': state1},
+    {'marker': True, 'data': state2},
+    {'marker': True, 'data': state3},
+    {'marker': False, 'data': complete_state({'Q': 0, 'T': state4['T']}, fluid)},
+    {'marker': True, 'data': state4},
+    {'marker': True, 'data': state5},
+    {'marker': True, 'data': state6},
+    {'marker': False, 'data': complete_state({'Q': 1, 'T': state1['T']}, fluid)},
+    {'marker': True, 'data': state1},
+]
+create_ts_plot(states, fluid).savefig('ts-plot.png')
+
 print(round(power_generator/1000, 2), ' kW')
 print(round(mass_flow, 2), 'kg/s')
 print('Eta_Machine = ', round(power_generator/power_vaporizer, 3))
@@ -100,5 +113,5 @@ print('state5s:')
 print(state5s)
 print('statePT2:')
 print(statePT2)
-'''
+#'''
 
