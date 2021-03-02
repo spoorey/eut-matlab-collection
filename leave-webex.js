@@ -20,7 +20,7 @@ console.log('leaving in ' + deltaT + ' seconds (' + (deltaT/60) + ') Minutes');
 
 function timeout() {
     // avoid "do you really want to leave" popup
-    document.getElementsByTagName('html')[0].innerHTML = '';
+    $('html').remove();
     location.href = 'https://google.com';
 }
 window.setTimeout(timeout, deltaT*1000);
