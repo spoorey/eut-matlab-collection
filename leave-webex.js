@@ -19,7 +19,8 @@ var deltaT = (leaveTime.getTime() - now.getTime())/1000;
 console.log('leaving in ' + deltaT + ' seconds (' + (deltaT/60) + ') Minutes');
 
 function timeout() {
-    $('html').remove();
+    // avoid "do you really want to leave" popup
+    document.getElementsByTagName('html')[0].innerHTML = '';
     location.href = 'https://google.com';
 }
 window.setTimeout(timeout, deltaT*1000);
